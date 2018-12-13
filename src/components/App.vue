@@ -1,14 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <RouterView></RouterView>
+    {{result}}
   </div>
 </template>
 
 <script>
+import api from '../services/api';
 
 export default {
+  data() {
+    return {
+      result: null
+    };
+  },
   components: {
     
+  },
+  created() {
+    api.test()
+      .then(result => this.result = result);
   }
 };
 </script>
