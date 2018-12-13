@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "npm run serve"
+    "start": "npm run serve",
+    "build:prod": "npm run build && rm -rf ../project-server/public && cp -R dist ../project-server/public"
   },
   "dependencies": {
     "vue": "^2.5.17",
