@@ -1,12 +1,9 @@
-import VueRouter from 'vue-router';
-import Home from './components/home/Home';
-import Pets from './components/pets/Pets';
+import VueRouter from 'vue-router'; 
+import Home from './components/Home';  
 
-export default new VueRouter({
-  // mode: 'history',
-  routes: [
-    { path: '/', component: Home },
-    { path: '/pets', component: Pets },
+export default new VueRouter ({
+  routes : [
+    { path: '/', component: Home }, 
     { path: '*', redirect: '/' }
   ]
 });

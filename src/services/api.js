@@ -1,6 +1,6 @@
 export default {
-    test() {
+  test() {
     return fetch('/api')
-        .then(result => response.json())
-    }
+      .then(response => response.json());
+  }
 };
