@@ -1,14 +1,19 @@
 {
-    "extends": "eslint:recommended",
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/essential"
+    ],
     "parserOptions": {
+      "parser": "babel-eslint",
       "ecmaVersion": 8,
-      "ecmaFeatures": {
-        "impliedStrict": true
-      }
+      "sourceType": "module"
     },
     "env": {
-      "node": true,
+      "browser": true,
       "es6": true
+    },
+    "globals": {
+      "process": false
     },
     "rules": {
       "eqeqeq": ["error", "always"],
@@ -21,7 +26,7 @@
         }
       ],
       "no-trailing-spaces": "off",
-      "new-cap": "off",
+      "new-cap": "error",
       "no-redeclare": [
         "error",
         {
@@ -44,7 +49,8 @@
             "for": { "after": false },
             "while": { "after": false },
             "do": { "after": false },
-            "switch": { "after": false }
+            "switch": { "after": false },
+            "catch": { "after": false }
           } 
         }
       ],

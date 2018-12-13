@@ -7,16 +7,12 @@
 </template>
 
 <script>
-import api from '../services/api'
-import Home from './home/Home';
+import api from '../services/api';
 export default {
   data() {
     return {
       result: null
-    }
-  },
-  components: {
-    Home
+    };
   },
   created() {
     api.test()
