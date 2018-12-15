@@ -4,12 +4,25 @@
     <p>
         My dog used to chase people on a bike a lot. It got so bad I had to take his bike away.
     </p>
+    {{restaurants}}
   </section>
 </template>
 
 <script>
+import restaurantApi from '../../services/restaurantApi';
+
 export default {
-  
+  data() {
+    return {
+      restaurants: null
+    };
+  },
+  created() {
+    restaurantApi.getAll()
+      .then(restaurants => this.restaurants = restaurants);
+  }
+
+
 };
 </script>
 
