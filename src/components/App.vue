@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="../assets/logo.png">
     <RouterView></RouterView>
-    {{result}}
+    Coming from the app component: {{result}}
   </div>
 </template>
 
