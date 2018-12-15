@@ -1,6 +1,9 @@
 <template>
   <section>
-    <h2>Welcome to My Project!</h2>
+    <h2>Welcome to Joke Sample Project!</h2>
+    <p>
+        My dog used to chase people on a bike a lot. It got so bad I had to take his bike away.
+    </p>
   </section>
 </template>
 
