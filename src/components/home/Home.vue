@@ -2,7 +2,7 @@
   <section>
     <h2>Welcome to Joke Project!</h2>
     <p>
-        My dog used to chase people on a bike a lot. It got so bad I had to take his bike away.
+        Jokes go here, not hooked to API yet.
     </p>
     {{restaurants}}
   </section>
